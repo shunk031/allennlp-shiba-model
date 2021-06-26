@@ -10,34 +10,28 @@ This library enables users to specify the in a jsonnet config file. Here is an e
 
 ```json
 {
-    dataset_reader: {
-        ...
-
-        tokenizer: {
+    "dataset_reader": {
+        "tokenizer": {
             type: "shiba",
         },
-        token_indexers: {
-            tokens: {
-                type: "shiba",
+        "token_indexers": {
+            "tokens": {
+                "type": "shiba",
             }
         },
-        ...
     },
-    ...
-
-    model: {
-        shiba_embedder: {
-            type: "basic",
-            token_embedders: {
-                shiba: {
-                    type: "shiba",
-                    eval_model: true,
+    "model": {
+        "shiba_embedder": {
+            "type": "basic",
+            "token_embedders": {
+                "shiba": {
+                    "type": "shiba",
+                    "eval_model": true,
                 }
             }
 
         }
-    },
-    ...
+    }
 }
 ```
 
