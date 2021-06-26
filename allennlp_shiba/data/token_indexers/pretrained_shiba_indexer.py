@@ -1,16 +1,10 @@
-from typing import Any, Dict, List, Optional
+from typing import Dict, List, Optional
 
-import pytest
-import torch
-from allennlp.data.token_indexers.token_indexer import (
-    IndexedTokenList,
-    TokenIndexer
-)
+from allennlp.data.token_indexers.token_indexer import IndexedTokenList, TokenIndexer
 from allennlp.data.tokenizers.token_class import Token
 from allennlp.data.vocabulary import Vocabulary
 from allennlp_shiba.data.tokenizers import ShibaCodepointTokenizer
 from overrides import overrides
-from torch._C import Value
 
 
 @TokenIndexer.register("shiba")
