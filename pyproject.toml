@@ -1,7 +1,10 @@
 [tool.poetry]
-name = "allennlp-shiba-model"
+name = "allennlp-shiba"
 version = "0.1.0"
 description = ""
+readme = "README.md"
+homepage = "https://github.com/shunk031/allennlp-shiba-model"
+repository = "https://github.com/shunk031/allennlp-shiba-model"
 authors = ["Shunsuke KITADA <shunsuke.kitada.0831@gmail.com>"]
 
 [tool.poetry.dependencies]
