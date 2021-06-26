@@ -1,6 +1,5 @@
 from typing import Dict
 
-import pytest
 import torch
 from allennlp.common import Params
 from allennlp.data.batch import Batch
