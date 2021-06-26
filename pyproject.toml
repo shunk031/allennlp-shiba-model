@@ -1,11 +1,23 @@
 [tool.poetry]
 name = "allennlp-shiba"
-version = "0.1.0"
-description = ""
+version = "0.0.0" # using poetry-dynamic-versioning
+license = "Apache-2.0"
+description = "AllenNLP integration for Shiba: Japanese CANINE model"
 readme = "README.md"
 homepage = "https://github.com/shunk031/allennlp-shiba-model"
 repository = "https://github.com/shunk031/allennlp-shiba-model"
 authors = ["Shunsuke KITADA <shunsuke.kitada.0831@gmail.com>"]
+keywords = [
+    "natural language processing",
+    "deep learning",
+    "transformers",
+    "allennlp",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -22,3 +34,6 @@ pytest = "^6.2.4"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = true
