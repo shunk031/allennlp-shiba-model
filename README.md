@@ -1,8 +1,10 @@
 # Allennlp Integration for [Shiba](https://github.com/octanove/shiba)
 
-> SHIBA is an approximate reimplementation of CANINE [[1]](https://github.com/octanove/shiba#1) in raw Pytorch, pretrained on the Japanese wikipedia corpus using random span masking. If you are unfamiliar with CANINE, you can think of it as a very efficient (approximately 4x as efficient) character-level BERT model. Of course, the name SHIBA comes from the identically named Japanese canine.
+[![CI](https://github.com/shunk031/allennlp-shiba-model/actions/workflows/ci.yml/badge.svg)](https://github.com/shunk031/allennlp-shiba-model/actions/workflows/ci.yml)
 
 `allennlp-shiab-model` is a Python library that provides AllenNLP integration for [shiba-model](https://pypi.org/project/shiba-model/).
+
+> SHIBA is an approximate reimplementation of CANINE [[1]](https://github.com/octanove/shiba#1) in raw Pytorch, pretrained on the Japanese wikipedia corpus using random span masking. If you are unfamiliar with CANINE, you can think of it as a very efficient (approximately 4x as efficient) character-level BERT model. Of course, the name SHIBA comes from the identically named Japanese canine.
 
 ## Example
 
@@ -12,7 +14,7 @@ This library enables users to specify the in a jsonnet config file. Here is an e
 {
     "dataset_reader": {
         "tokenizer": {
-            type: "shiba",
+            "type": "shiba",
         },
         "token_indexers": {
             "tokens": {
